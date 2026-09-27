@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHOP｜三寿</title>
+  <meta name="description" content="三寿のオンラインショップ。手作り石鹸、漢方ブレンドティー、アート作品をご覧いただけます。">
+  <meta property="og:title" content="SHOP｜三寿">
+  <meta property="og:description" content="三寿のオンラインショップ。手作り石鹸、漢方ブレンドティー、アート作品。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main data-page="shop">
+    <div class="page-hero wrap">
+      <p class="eyebrow">ONLINE STORE</p>
+      <h1>SHOP</h1>
+    </div>
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <nav class="filters" aria-label="カテゴリー">
+          <a href="shop.html" data-filter="all">ALL</a>
+          <a href="shop.html?category=soap" data-filter="soap">SOAP</a>
+          <a href="shop.html?category=tea" data-filter="tea">TEA</a>
+          <a href="shop.html?category=art" data-filter="art">ART</a>
+        </nav>
+        <div class="product-grid" data-product-grid></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="search-modal" class="search-modal" hidden>
+    <div class="search-panel">
+      <input id="search-input" type="search" placeholder="商品を検索" aria-label="商品を検索">
+      <div id="search-results"></div>
+      <p><button type="button" class="text-btn" data-close-search>閉じる</button></p>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
