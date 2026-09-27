@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アートワーク｜三寿</title>
+  <meta name="description" content="三寿のアートワーク。イラストや作品をギャラリー形式でご紹介します。">
+  <meta property="og:title" content="アートワーク｜三寿">
+  <meta property="og:description" content="暮らしや心を彩るアート作品。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/art-01.jpg">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+    <div class="page-hero wrap">
+      <p class="eyebrow">ART</p>
+      <h1>アートワーク</h1>
+    </div>
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <p class="about-lead reveal">作品写真、作品名、作家名、サイズ、素材、制作年、価格を、作品ごとのページでご覧いただけます。SOLD OUT の表示にも対応しています。作品の追加は js/products.js から行えます。</p>
+        <div class="product-grid" data-art-grid></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="search-modal" class="search-modal" hidden>
+    <div class="search-panel">
+      <input id="search-input" type="search" placeholder="商品を検索" aria-label="商品を検索">
+      <div id="search-results"></div>
+      <p><button type="button" class="text-btn" data-close-search>閉じる</button></p>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
