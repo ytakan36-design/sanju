@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商品詳細｜三寿</title>
+  <meta name="description" content="三寿の商品詳細。手作り石鹸、漢方ブレンドティー、アート作品。">
+  <meta property="og:title" content="商品詳細｜三寿">
+  <meta property="og:description" content="三寿の商品詳細ページ。">
+  <meta property="og:type" content="product">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main data-page="product">
+    <section class="section">
+      <div class="wrap" id="product-root"></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="search-modal" class="search-modal" hidden>
+    <div class="search-panel">
+      <input id="search-input" type="search" placeholder="商品を検索" aria-label="商品を検索">
+      <div id="search-results"></div>
+      <p><button type="button" class="text-btn" data-close-search>閉じる</button></p>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
