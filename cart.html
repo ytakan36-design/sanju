@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ご注文ありがとうございます｜三寿</title>
+  <meta name="description" content="三寿へのご注文ありがとうございました。">
+  <meta property="og:title" content="ご注文ありがとうございます｜三寿">
+  <meta property="og:description" content="三寿へのご注文ありがとうございました。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main data-page="complete">
+    <div class="complete-box wrap">
+      <p class="eyebrow">THANK YOU</p>
+      <h1>ご注文ありがとうございます。</h1>
+      <p>商品の発送準備が整い次第、ご案内いたします。<br>正式な注文番号は、Shopifyの決済完了画面および確認メールに記載されます。</p>
+      <p>注文番号：<strong id="order-number"></strong></p>
+      <p><a class="btn" href="index.html">トップへ戻る</a></p>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="search-modal" class="search-modal" hidden>
+    <div class="search-panel">
+      <input id="search-input" type="search" placeholder="商品を検索" aria-label="商品を検索">
+      <div id="search-results"></div>
+      <p><button type="button" class="text-btn" data-close-search>閉じる</button></p>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
