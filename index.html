@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>三寿｜手作り石鹸・漢方ブレンドティー・アート</title>
+  <meta name="description" content="三寿では、ソンバーユを使用した手作り石鹸、漢方の考え方を取り入れたブレンドティー、暮らしを彩るアート作品をお届けしています。">
+  <meta property="og:title" content="三寿｜手作り石鹸・漢方ブレンドティー・アート">
+  <meta property="og:description" content="三寿では、ソンバーユを使用した手作り石鹸、漢方の考え方を取り入れたブレンドティー、暮らしを彩るアート作品をお届けしています。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main data-page="home">
+    <section class="hero">
+      <div class="hero-image-wrap">
+        <img id="hero-image" src="images/hero.jpg" alt="三寿のアトリエと暮らしのイメージ写真">
+      </div>
+      <div class="hero-copy">
+        <h1 id="hero-brand" class="hero-brand">三寿</h1>
+        <p id="hero-catch" class="hero-catch">暮らしに、やさしいものを。</p>
+      </div>
+      <p class="hero-scroll">SCROLL</p>
+    </section>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-title reveal">
+          <small>ABOUT</small>
+          <h2 id="about-heading">三寿について</h2>
+        </div>
+        <p id="about-body" class="about-lead reveal"></p>
+        <p class="about-lead reveal"><a class="btn btn-ghost" href="about.html">詳しく見る</a></p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-title reveal">
+          <small>COLLECTION</small>
+          <h2>商品カテゴリー</h2>
+        </div>
+        <div class="category-grid">
+          <a class="category-card reveal" href="soap.html">
+            <div class="category-card-image">
+              <img id="cat-soap-image" src="images/soap-01.jpg" alt="手作り石鹸">
+            </div>
+            <div class="category-card-body">
+              <p class="eyebrow">SOAP</p>
+              <h3>手作り石鹸</h3>
+              <p id="cat-soap-text">ソンバーユを配合し、肌にやさしく、うるおいを感じられる手作り石鹸。</p>
+            </div>
+          </a>
+          <a class="category-card reveal" href="tea.html">
+            <div class="category-card-image">
+              <img id="cat-tea-image" src="images/tea-jin.jpg" alt="漢方ブレンドティー">
+            </div>
+            <div class="category-card-body">
+              <p class="eyebrow">TEA</p>
+              <h3>漢方ブレンドティー</h3>
+              <p>日々の養生を意識したブレンド。毎日のティータイムに、身体をいたわる時間を。</p>
+            </div>
+          </a>
+          <a class="category-card reveal" href="art.html">
+            <div class="category-card-image">
+              <img id="cat-art-image" src="images/art-01.jpg" alt="アートワーク">
+            </div>
+            <div class="category-card-body">
+              <p class="eyebrow">ART</p>
+              <h3>アートワーク</h3>
+              <p>暮らしや心を彩る、イラストとアート作品。</p>
+            </div>
+          </a>
+        </div>
+        <p class="atelier-line reveal">小さなアトリエから、丁寧に作ったものを届ける。</p>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="search-modal" class="search-modal" hidden>
+    <div class="search-panel">
+      <input id="search-input" type="search" placeholder="商品を検索" aria-label="商品を検索">
+      <div id="search-results"></div>
+      <p><button type="button" class="text-btn" data-close-search>閉じる</button></p>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
