@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お問い合わせ｜三寿</title>
+  <meta name="description" content="三寿・アトリエライブへのお問い合わせ。千葉県野田市木間ケ瀬2640-13。">
+  <meta property="og:title" content="お問い合わせ｜三寿">
+  <meta property="og:description" content="三寿・アトリエライブへのお問い合わせ。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+    <div class="page-hero wrap">
+      <p class="eyebrow">CONTACT</p>
+      <h1>お問い合わせ</h1>
+    </div>
+    <section class="section" style="padding-top:0">
+      <div class="wrap split">
+        <div class="access-card reveal">
+          <h2>アトリエライブ</h2>
+          <p>
+            〒270-0222<br>
+            千葉県野田市木間ケ瀬2640-13<br>
+            TEL：<a href="tel:07015195757">070-1519-5757</a><br>
+            E-mail：<a href="mailto:atelierlive264013@gmail.com">atelierlive264013@gmail.com</a>
+          </p>
+          <p class="fine">店舗へのご来訪は、事前にお問い合わせください。（営業時間は要入力）</p>
+        </div>
+        <form class="contact-form reveal" data-contact-form>
+          <label>お名前<input type="text" name="name" required autocomplete="name"></label>
+          <label>メールアドレス<input type="email" name="email" required autocomplete="email"></label>
+          <label>件名<input type="text" name="subject" required></label>
+          <label>お問い合わせ内容<textarea name="message" required></textarea></label>
+          <button type="submit" class="btn">送信する</button>
+          <p class="fine">Formspree などの送信先を js/config.js に入れると、サイトから直接メールを送れます。未設定のときはメールアプリが開きます。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="search-modal" class="search-modal" hidden>
+    <div class="search-panel">
+      <input id="search-input" type="search" placeholder="商品を検索" aria-label="商品を検索">
+      <div id="search-results"></div>
+      <p><button type="button" class="text-btn" data-close-search>閉じる</button></p>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
